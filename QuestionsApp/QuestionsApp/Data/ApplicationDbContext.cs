@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using QuestionsApp.Controllers;
 
 namespace QuestionsApp.Data
 {
@@ -12,5 +13,6 @@ namespace QuestionsApp.Data
             : base(options)
         {
         }
+        public DbSet<QuestionsApp.Controllers.Question> Question { get; set; }
     }
 }
